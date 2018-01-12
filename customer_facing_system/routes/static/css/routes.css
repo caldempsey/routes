@@ -1,0 +1,123 @@
+body {
+    /* Define default font face  */
+    font-family: 'Titillium Web', sans-serif;
+    /* Define fixed height and width of body content */
+    width: 100%;
+    background: #ffffff;
+    /*Define default text colour*/
+    color: white;
+    padding-bottom: 20px;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 0 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #179b77;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #179b77;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+}
+
+/*Change the style of any form elements to suit the theme*/
+.form {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+/*Custom styles for button size, ensure block container sets automatic width with minimum %*/
+.button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    margin:auto;
+    width: 100%;
+    min-width: 30%;
+}
+
+/*Custom styles for button hovered*/
+.button:hover, .button:focus {
+    background: #179b77;
+}
+
+input:focus, textarea:focus, #date:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+/*
+Bootstrap Table override
+
+Override for bootstrap color element for columns i.e. in datetime calender.
+Mobile "tap" friendly spacing.
+*/
+#bootstrap_table {
+    background: rgba(19, 35, 47, 0.9);
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}

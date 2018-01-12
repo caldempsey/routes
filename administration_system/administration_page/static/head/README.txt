@@ -1,0 +1,1 @@
+These head files are intended for use of nested directories (i.e. the administrator page).

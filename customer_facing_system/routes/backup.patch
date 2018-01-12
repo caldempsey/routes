@@ -1,0 +1,482 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 85)
++++ .idea/workspace.xml	(revision )
+@@ -5,10 +5,12 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" readonly="true" id="d72405ba-0fee-4106-ad83-86a36c8c9d95" name="Default" comment="">
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database.php" afterPath="$PROJECT_DIR$/Database.php" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DatabaseResultsParser.php" afterPath="$PROJECT_DIR$/DatabaseResultsParser.php" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.php" afterPath="$PROJECT_DIR$/main.php" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RouteTable.php" afterPath="$PROJECT_DIR$/RouteTable.php" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/stationStopNode.php" afterPath="$PROJECT_DIR$/stationStopNode.php" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrainSchedule.php" afterPath="$PROJECT_DIR$/TrainSchedule.php" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrainSchedules.php" afterPath="$PROJECT_DIR$/TrainSchedules.php" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="TRACKING_ENABLED" value="true" />
+@@ -26,8 +28,8 @@
+       <file leaf-file-name="stationStopNode.php" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/stationStopNode.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="935">
+-              <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
++            <state relative-caret-position="-233">
++              <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+               <folding>
+                 <element signature="e#7#96#0#PHP" expanded="true" />
+               </folding>
+@@ -38,17 +40,17 @@
+       <file leaf-file-name="RouteTable.php" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/RouteTable.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="546">
+-              <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
++            <state relative-caret-position="325">
++              <caret line="32" column="51" lean-forward="false" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="InputParser.php" pinned="false" current-in-tab="false">
++      <file leaf-file-name="InputParser.php" pinned="false" current-in-tab="true">
+         <entry file="file://$PROJECT_DIR$/InputParser.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="512">
++            <state relative-caret-position="891">
+               <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+               <folding />
+             </state>
+@@ -68,8 +70,8 @@
+       <file leaf-file-name="DatabaseResultsParser.php" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/DatabaseResultsParser.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="68">
+-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
++            <state relative-caret-position="442">
++              <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+               <folding />
+             </state>
+           </provider>
+@@ -78,10 +80,10 @@
+       <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/Database.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="272">
+-              <caret line="61" column="59" lean-forward="true" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
++            <state relative-caret-position="289">
++              <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+               <folding>
+-                <marker date="1493587663201" expanded="true" signature="1248:1659" ph="SELECT Stati... StationTrainSchedules" />
++                <marker date="1493588281535" expanded="true" signature="1248:1659" ph="SELECT Stati... StationTrainSchedules" />
+               </folding>
+             </state>
+           </provider>
+@@ -97,7 +99,7 @@
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="main.php" pinned="false" current-in-tab="true">
++      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/main.php">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="153">
+@@ -114,8 +116,8 @@
+       <file leaf-file-name="TrainSchedules.php" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/TrainSchedules.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="136">
+-              <caret line="13" column="114" lean-forward="false" selection-start-line="13" selection-start-column="114" selection-end-line="13" selection-end-column="114" />
++            <state relative-caret-position="2275">
++              <caret line="195" column="43" lean-forward="false" selection-start-line="195" selection-start-column="43" selection-end-line="195" selection-end-column="43" />
+               <folding>
+                 <element signature="e#7#96#0#PHP" expanded="true" />
+               </folding>
+@@ -126,8 +128,8 @@
+       <file leaf-file-name="TrainSchedule.php" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/TrainSchedule.php">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="221">
+-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
++            <state relative-caret-position="546">
++              <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+               <folding />
+             </state>
+           </provider>
+@@ -154,6 +156,7 @@
+       <find>debug</find>
+       <find>[Xdebug]</find>
+       <find>get</find>
++      <find>int</find>
+     </findStrings>
+   </component>
+   <component name="IdeDocumentHistory">
+@@ -178,15 +181,15 @@
+         <option value="$PROJECT_DIR$/notFound.html" />
+         <option value="$PROJECT_DIR$/times.php" />
+         <option value="$PROJECT_DIR$/../../umit/login-system/index.php" />
+-        <option value="$PROJECT_DIR$/TrainSchedules.php" />
+-        <option value="$PROJECT_DIR$/stationStopNode.php" />
+-        <option value="$PROJECT_DIR$/RouteTable.php" />
+         <option value="$PROJECT_DIR$/InputParser.php" />
+         <option value="$PROJECT_DIR$/info.php" />
+-        <option value="$PROJECT_DIR$/TrainSchedule.php" />
+-        <option value="$PROJECT_DIR$/DatabaseResultsParser.php" />
+-        <option value="$PROJECT_DIR$/Database.php" />
+         <option value="$PROJECT_DIR$/main.php" />
++        <option value="$PROJECT_DIR$/Database.php" />
++        <option value="$PROJECT_DIR$/DatabaseResultsParser.php" />
++        <option value="$PROJECT_DIR$/TrainSchedule.php" />
++        <option value="$PROJECT_DIR$/TrainSchedules.php" />
++        <option value="$PROJECT_DIR$/stationStopNode.php" />
++        <option value="$PROJECT_DIR$/RouteTable.php" />
+       </list>
+     </option>
+   </component>
+@@ -482,7 +485,7 @@
+       <workItem from="1493578931309" duration="901000" />
+       <workItem from="1493580037524" duration="91000" />
+       <workItem from="1493581219024" duration="355000" />
+-      <workItem from="1493581640623" duration="6060000" />
++      <workItem from="1493581640623" duration="6957000" />
+     </task>
+     <task id="LOCAL-00001">
+       <created>1493581275620</created>
+@@ -631,11 +634,60 @@
+       <option name="project" value="LOCAL" />
+       <updated>1493587571706</updated>
+     </task>
+-    <option name="localTasksCounter" value="22" />
++    <task id="LOCAL-00022">
++      <created>1493587711711</created>
++      <option name="number" value="00022" />
++      <option name="presentableId" value="LOCAL-00022" />
++      <option name="project" value="LOCAL" />
++      <updated>1493587711711</updated>
++    </task>
++    <task id="LOCAL-00023">
++      <created>1493588027712</created>
++      <option name="number" value="00023" />
++      <option name="presentableId" value="LOCAL-00023" />
++      <option name="project" value="LOCAL" />
++      <updated>1493588027712</updated>
++    </task>
++    <task id="LOCAL-00024">
++      <created>1493588043713</created>
++      <option name="number" value="00024" />
++      <option name="presentableId" value="LOCAL-00024" />
++      <option name="project" value="LOCAL" />
++      <updated>1493588043713</updated>
++    </task>
++    <task id="LOCAL-00025">
++      <created>1493588293715</created>
++      <option name="number" value="00025" />
++      <option name="presentableId" value="LOCAL-00025" />
++      <option name="project" value="LOCAL" />
++      <updated>1493588293715</updated>
++    </task>
++    <task id="LOCAL-00026">
++      <created>1493588356716</created>
++      <option name="number" value="00026" />
++      <option name="presentableId" value="LOCAL-00026" />
++      <option name="project" value="LOCAL" />
++      <updated>1493588356716</updated>
++    </task>
++    <task id="LOCAL-00027">
++      <created>1493588406717</created>
++      <option name="number" value="00027" />
++      <option name="presentableId" value="LOCAL-00027" />
++      <option name="project" value="LOCAL" />
++      <updated>1493588406717</updated>
++    </task>
++    <task id="LOCAL-00028">
++      <created>1493588473722</created>
++      <option name="number" value="00028" />
++      <option name="presentableId" value="LOCAL-00028" />
++      <option name="project" value="LOCAL" />
++      <updated>1493588473722</updated>
++    </task>
++    <option name="localTasksCounter" value="29" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="168130000" />
++    <option name="totallyTimeSpent" value="169027000" />
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="222" y="294" width="1932" height="1056" extended-state="0" />
+@@ -833,16 +885,6 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/stationStopNode.php">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="935">
+-          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+-          <folding>
+-            <element signature="e#7#96#0#PHP" expanded="true" />
+-          </folding>
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/info.php">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="85">
+@@ -851,75 +893,85 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/RouteTable.php">
++    <entry file="file://$PROJECT_DIR$/exampleIndex.html">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="546">
+-          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/InputParser.php">
++    <entry file="file://$PROJECT_DIR$/main.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="512">
+-          <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+-          <folding />
++        <state relative-caret-position="153">
++          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
++          <folding>
++            <marker date="1493587699149" expanded="true" signature="1325:1654" ph="..." />
++            <marker date="1493587699149" expanded="true" signature="1334:1466" ph="..." />
++            <marker date="1493587699149" expanded="true" signature="1522:1654" ph="..." />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/TrainSchedules.php">
++    <entry file="file://$PROJECT_DIR$/Database.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="136">
+-          <caret line="13" column="114" lean-forward="false" selection-start-line="13" selection-start-column="114" selection-end-line="13" selection-end-column="114" />
++        <state relative-caret-position="289">
++          <caret line="62" column="46" lean-forward="false" selection-start-line="62" selection-start-column="46" selection-end-line="62" selection-end-column="46" />
+           <folding>
+-            <element signature="e#7#96#0#PHP" expanded="true" />
++            <marker date="1493588281535" expanded="true" signature="1248:1659" ph="SELECT Stati... StationTrainSchedules" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/TrainSchedule.php">
++    <entry file="file://$PROJECT_DIR$/DatabaseResultsParser.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="221">
+-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
++        <state relative-caret-position="442">
++          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/exampleIndex.html">
++    <entry file="file://$PROJECT_DIR$/TrainSchedule.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="546">
++          <caret line="67" column="35" lean-forward="false" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/DatabaseResultsParser.php">
++    <entry file="file://$PROJECT_DIR$/TrainSchedules.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="68">
+-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+-          <folding />
++        <state relative-caret-position="2275">
++          <caret line="195" column="43" lean-forward="false" selection-start-line="195" selection-start-column="43" selection-end-line="195" selection-end-column="43" />
++          <folding>
++            <element signature="e#7#96#0#PHP" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/Database.php">
++    <entry file="file://$PROJECT_DIR$/stationStopNode.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="272">
+-          <caret line="61" column="59" lean-forward="true" selection-start-line="61" selection-start-column="59" selection-end-line="61" selection-end-column="59" />
++        <state relative-caret-position="-233">
++          <caret line="24" column="39" lean-forward="false" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+           <folding>
+-            <marker date="1493587663201" expanded="true" signature="1248:1659" ph="SELECT Stati... StationTrainSchedules" />
++            <element signature="e#7#96#0#PHP" expanded="true" />
+           </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/main.php">
++    <entry file="file://$PROJECT_DIR$/RouteTable.php">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="153">
+-          <caret line="26" column="17" lean-forward="false" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+-          <folding>
+-            <marker date="1493587699149" expanded="true" signature="1325:1654" ph="..." />
+-            <marker date="1493587699149" expanded="true" signature="1334:1466" ph="..." />
+-            <marker date="1493587699149" expanded="true" signature="1522:1654" ph="..." />
+-          </folding>
++        <state relative-caret-position="325">
++          <caret line="32" column="51" lean-forward="false" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/InputParser.php">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="891">
++          <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+Index: TrainSchedule.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TrainSchedule.php	(revision 98)
++++ TrainSchedule.php	(revision )
+@@ -7,7 +7,7 @@
+     private $trainScheduleId;
+     public $toString;
+ 
+-    public function __construct(int $trainScheduleId)
++    public function __construct(integer $trainScheduleId)
+     {
+         $this->$trainScheduleId = $trainScheduleId;
+         $this->toString = 'TrainSchedule ID: ' . $this->getTrainScheduleId();
+@@ -54,7 +54,7 @@
+     }
+ 
+     /*Given a station object will return its id*/
+-    function hasStationId(int $stationId)
++    function hasStationId(integer $stationId)
+     {
+         foreach ($this as $stationStop) {
+             $searchId = $stationStop->getStationId();
+@@ -65,7 +65,7 @@
+         return false;
+     }
+ 
+-    function getStationById(int $stationId)
++    function getStationById(integer $stationId)
+     {
+         foreach ($this as $stationStop) {
+             if ($stationId == $stationStop->getStationId()) {
+Index: TrainSchedules.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TrainSchedules.php	(revision 77)
++++ TrainSchedules.php	(revision )
+@@ -175,7 +175,7 @@
+     }
+ 
+ 
+-    function hasstationStopNode(int $stationId, DateTime $arrivalDateTime, DateTime $departureDateTime){
++    function hasstationStopNode(integer $stationId, DateTime $arrivalDateTime, DateTime $departureDateTime){
+         //Validate input by building a pseudo object.
+         if ($stationId <0) {
+             die("Station ID must be a value larger than 0.");
+@@ -193,7 +193,7 @@
+         return false;
+     }
+ 
+-    function getstationStopNode(int $stationId, DateTime $arrivalDateTime, DateTime $departureDateTime){
++    function getstationStopNode(integer $stationId, DateTime $arrivalDateTime, DateTime $departureDateTime){
+         //Validate input by building a pseudo object.
+         if ($stationId <0) {
+             die("Station ID must be a value larger than 0.");
+Index: stationStopNode.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- stationStopNode.php	(revision 77)
++++ stationStopNode.php	(revision )
+@@ -22,7 +22,7 @@
+      * @param DateTime $arrivalDateTime
+      * @param DateTime $departureDateTime
+      */
+-    public function __construct(int $stationId, string $stationName, DateTime $arrivalDateTime, DateTime $departureDateTime)
++    public function __construct(integer $stationId, string $stationName, DateTime $arrivalDateTime, DateTime $departureDateTime)
+     {
+         $this->stationId = $stationId;
+         $this->stationName = $stationName;
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 83)
++++ .idea/misc.xml	(revision )
+@@ -1,6 +1,23 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="SvnBranchConfigurationManager">
++    <option name="myConfigurationMap">
++      <map>
++        <entry key="$PROJECT_DIR$">
++          <value>
++            <SvnBranchConfiguration>
++              <option name="branchUrls">
++                <list>
++                  <option value="https://svn.cs.ncl.ac.uk/csc8005_team06/branches" />
++                  <option value="https://svn.cs.ncl.ac.uk/csc8005_team06/tags" />
++                </list>
++              </option>
++              <option name="trunkUrl" value="https://svn.cs.ncl.ac.uk/csc8005_team06/trunk" />
++            </SvnBranchConfiguration>
++          </value>
++        </entry>
++      </map>
++    </option>
+     <option name="mySupportsUserInfoFilter" value="true" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: RouteTable.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- RouteTable.php	(revision 80)
++++ RouteTable.php	(revision )
+@@ -11,7 +11,7 @@
+ {
+ 
+     //Returns null if the destination does not exist.
+-    public function getEarliestArrival(int $DestinationStationId)
++    public function getEarliestArrival(integer $DestinationStationId)
+     {
+         $earliestArrivalNode = null;
+         $firstLoop = true;
+@@ -30,7 +30,7 @@
+     }
+ 
+     //Check if a destination
+-    public function hasDestinationStationId(int $DestinationStationId)
++    public function hasDestinationStationId(integer $DestinationStationId)
+     {
+         foreach ($this as $rowDestinationArray){
+             if ($rowDestinationArray[1]->getStationId() == $DestinationStationId) {

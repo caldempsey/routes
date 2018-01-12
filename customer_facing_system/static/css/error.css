@@ -1,0 +1,20 @@
+body {
+    /* Define default font face  */
+   font-family: 'Titillium Web', sans-serif;
+   /* Define fixed height and width of body content */
+    width: 100%;
+	background: #ffffff;
+}
+
+p {
+	font-family: 'Titillium Web', sans-serif;
+	color: white;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+  font-weight: 300;
+  margin: 0 0 20px;
+  margin-top: 25px;
+}

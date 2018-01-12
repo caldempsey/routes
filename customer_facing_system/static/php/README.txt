@@ -1,0 +1,1 @@
+PDO.Database.php is an OOP style PHP file (class), instantiate first to access its methods.

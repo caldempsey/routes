@@ -1,0 +1,7 @@
+The system allows for a customer to find routes between two destinations. This readme will provide an overview on how best to use the system. 
+
+For the route finding system to work, a customer must first input the two stations that they are travelling between. First, input the station you are travelling from into the ‘Origin station’ drop down menu. Once the dropdown menu is clicked, you can either select a station from the list or narrow down the results by typing in part of the station’s name. To select the train station you are wishing to travel to, simply do the same process for the ‘Destination station’ dropdown menu.
+
+The next step is to select when it is that you wish to travel. To do this, select the month that you wish to travel using the left and right arrows adjacent to the currently selected month. Then, select the day of travel using the calendar provided. To change the time of travel, click on the clock icon located beneath the calendar. This will bring up a digital clock. To change the hour of travel, use the up and down arrow icon situated on the left of the screen, and use the other arrow keys to change the minutes. There is a button on the far right of the screen to toggle between ‘AM’ and ‘PM’. After all of this is done, use the ‘Search Fastest Route’ button to display the results. 
+
+Finally, if more problems are encountered when using the website, it is advisable to click on the ‘Help and Support’ page to find details of how to contact us.

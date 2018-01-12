@@ -1,0 +1,22 @@
+/*Bootstrap Override*/
+
+/*Will override the properties of the navigation bar i.e. text/color*
+
+/*Additionally the navbar will inherit anything from here */
+
+.navbar {
+     /* Define default font face  */
+    font-family: 'Titillium Web', sans-serif;
+    /* Define fixed height and width of body content */
+    width: 100%;
+    /* Prevent floating elements on left or right side */
+    clear: both;
+}
+
+.navbar span{
+ color: #1ab188;
+}
+
+
+
+/* End of Bootstrap Overwrite */
