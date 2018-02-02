@@ -1,4 +1,4 @@
-# Details about this solution
+## Details about this solution ##
 
 ```
 Title: Routes
@@ -6,7 +6,7 @@ Author: Callum Dempsey Leach (B6070824)
 Summary: Routes is an object oriented solution to the routing problem. The objective of Routes is to attain the fastest route given input data (based on URL).
 ```
 
-# Section 1: Introduction and thinking about the solution
+## Section 1: Introduction and thinking about the solution ##
 
 As outlined in CSC8004, the classical graph for applying a shortest path algorithm defines a graph and a series of vertex's. We would say each vertex represents a station and each edge connecting vertex's represents a cost. We would implement Dijkstra's algorithm to obtain the fastest routes between these vertex's and those costs. However we have identified this solution is not entirely suitable to solve the problem. To illustrate you can't just grab a train from any moment in time from vertex A and go to vertex B.
 Instead our database provides a timetable of information i.e.
@@ -55,7 +55,7 @@ This reasoning is useful for back end development: as long as we can know there 
 
 The question is, then, what is the earliest time we can get to arrive at one station from another station? How do we identify the fastest time? Using the time-expanded approach the solution is simple: the fastest route from Station A at 10:30 to Station C is such that it is the earliest arrival time at Station C reachable from the time-expanded node at Station A (Muller-Hannemann et al., p.3, 2017). 
 
-# Section 2: Algorithm Design
+## Section 2: Algorithm Design ##
 
 Since each connecting node representing time-event information is connected by an edge, a solution to discover what nodes can be said reachable by the edges (as defined in the tuples) is much simpler than Djekstra's. Another way of thinking about the graph of time-extended nodes and edges is to take advantage of the idea that they are bi-directional: if an edge represents the event information of a train from an originating station A at 10:00, and a destination Station C at 12:00 can be said reachable then we can know there are no possible paths which ought to connect those nodes to each other in the reverse order (or in other words it does not travel backwards in time). As a result of this another way we can think about the topology of our nodes and edges is as a tree. Conveniently, a well known available solution for traversing a pre-ordered tree to find information is a depth first search (Dept. Information & Computer Science, 2017). Therefore we are able to use a simple depth first search algorithm as a simple tool to answer this question. Based on this, some rough pseudo-code (or steps) used to traverse the topology is as following...
 
@@ -83,7 +83,9 @@ Recall the problem, how to arrive at the fastest possible route to the destinati
 
 We should now raise this does not necessarily solve the problem. The problem is to find the fastest route between one station and another. But recall our definition from the closing remarks of “Section 1”: the fastest route from Station A at 10:30 to Station C is such that it is the earliest arrival time at Station C reachable from the time-expanded node at Station A. Therefore, the only simple extra step required now we have traversed the graph and identified all the nodes reachable from "Station A" is to see which of those nodes are the earliest arriving node to "Station C", and return the route travelled to achieve that. 
 As a developers note, I have found (after about four weeks of trail and error) the most elegant method to return the route from "Station A" to "Station C" is as follows... For each neighbor (or connection) of the time-expanded node currently being investigated (defined "vertex" in the pseudo-code), annotate in each of those neighbors (that is "ahead of time") that we are able to arrive those time-expanded nodes from "vertex" (using list based solution trying to record the path caused some algorithmic chaos in keeping track of what the last node was in a while loop). We are then able to simply pick out the earliest arriving node from the seen nodes (if it exists at all), and trace back to the root time-expanded node. Since it is the earliest arrival node, we don't really need to concern ourselves with *how* we get back to "Station A at 10:30", because we know by definition it must be the earliest arrival time.
+
 ## Section 3: Implementation ##
+
 Using the above algorithmic design I was able to translate this into an object oriented solution using various real world entities (train schedules and stops). Painfully, type hinting is not allowed in PHP so a best effort has been made to design the following structure using its libraries...
 Beyond parsing information the algorithm conceptually makes use of three concepts (classes to be instantiated), these are...
 - StationStop defines time-expanded event information: the station scheduled to arrive and depart from, the arrival time of the event, the departure time of the event.
