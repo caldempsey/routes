@@ -1,4 +1,4 @@
-#Details about this solution
+# Details about this solution
 
 ```
 Title: Routes
@@ -6,7 +6,7 @@ Author: Callum Dempsey Leach (B6070824)
 Summary: Routes is an object oriented solution to the routing problem. The objective of Routes is to attain the fastest route given input data (based on URL).
 ```
 
-#Section 1: Introduction and thinking about the solution
+# Section 1: Introduction and thinking about the solution
 
 As outlined in CSC8004, the classical graph for applying a shortest path algorithm defines a graph and a series of vertex's. We would say each vertex represents a station and each edge connecting vertex's represents a cost. We would implement Dijkstra's algorithm to obtain the fastest routes between these vertex's and those costs. However we have identified this solution is not entirely suitable to solve the problem. To illustrate you can't just grab a train from any moment in time from vertex A and go to vertex B.
 Instead our database provides a timetable of information i.e.
@@ -55,7 +55,7 @@ This reasoning is useful for back end development: as long as we can know there 
 
 The question is, then, what is the earliest time we can get to arrive at one station from another station? How do we identify the fastest time? Using the time-expanded approach the solution is simple: the fastest route from Station A at 10:30 to Station C is such that it is the earliest arrival time at Station C reachable from the time-expanded node at Station A (Muller-Hannemann et al., p.3, 2017). 
 
-#Section 2: Algorithm Design
+# Section 2: Algorithm Design
 
 Since each connecting node representing time-event information is connected by an edge, a solution to discover what nodes can be said reachable by the edges (as defined in the tuples) is much simpler than Djekstra's. Another way of thinking about the graph of time-extended nodes and edges is to take advantage of the idea that they are bi-directional: if an edge represents the event information of a train from an originating station A at 10:00, and a destination Station C at 12:00 can be said reachable then we can know there are no possible paths which ought to connect those nodes to each other in the reverse order (or in other words it does not travel backwards in time). As a result of this another way we can think about the topology of our nodes and edges is as a tree. Conveniently, a well known available solution for traversing a pre-ordered tree to find information is a depth first search (Dept. Information & Computer Science, 2017). Therefore we are able to use a simple depth first search algorithm as a simple tool to answer this question. Based on this, some rough pseudo-code (or steps) used to traverse the topology is as following...
 
@@ -91,7 +91,7 @@ Beyond parsing information the algorithm conceptually makes use of three concept
 - Train Schedules defines a collection of train schedule objects.
 Using this approach, a train has a schedule where it travels along a route between stations, and collections of those schedules can be used to determine the connections between routes i.e. if a train arrives at a station from one route, then at that station it must connect with all proceeding routes from that time of arrival (see Section 2 for more details on this).
 
-#Bibilography
+# Bibilography
 
 Dept. Information & Computer Science, (2017). ICS 161: Design and Analysis of Algorithms Lecture notes for February 15, 1996. [online] Available at: https://www.ics.uci.edu/~eppstein/161/960215.html [Accessed 1 May 2017].
 Muller-Hannemann, M., Schulz, F., Wagner, D. and Zaroliagis, C. (2017). Timetable Information: Models and Algorithms. [online] Available at: http://i11www.iti.kit.edu/extra/publications/mswz-tima-06.pdf [Accessed 1 May 2017].
